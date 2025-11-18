@@ -1,0 +1,62 @@
+/* Beautiful, peaceful theme. Joyous. */
+body {
+    background-color: #E0F7FA; /* Light cyan background */
+    color: #006064; /* Dark cyan text */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+} 
+h1, h2, h3 {
+    color: #004D40; /* Teal headings */
+}
+a {
+    color: #00796B; /* Teal links */
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+button {
+    background-color: #004D40; /* Teal button */
+    color: #E0F7FA; /* Light cyan text */
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #00796B; /* Darker teal on hover */
+}
+button:active {
+    background-color: #00251A; /* Even darker teal on click */
+}
+/* Dark mode toggle */
+body.dark-mode {
+    background-color: #263238; /* Dark background */
+    color: #ECEFF1; /* Light text */
+}
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 {
+    color: #B2DFDB; /* Light teal headings */
+} 
+body.dark-mode a {
+    color: #80CBC4; /* Light teal links */
+}
+body.dark-mode button {
+    background-color: #004D40; /* Teal button */
+    color: #ECEFF1; /* Light text */
+}
+body.dark-mode button:hover {
+    background-color: #00796B; /* Darker teal on hover */
+}
+body.dark-mode button:active {
+    background-color: #00251A; /* Even darker teal on click */
+} 
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+        font-size: 14px; 
+    }
+    button {
+        padding: 8px 12px;
+    }
+}
