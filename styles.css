@@ -1,62 +1,112 @@
-/* Beautiful, peaceful theme. Joyous. */
+/* Light mode styles of joy and happiness */ 
 body {
     background-color: #E0F7FA; /* Light cyan background */
-    color: #006064; /* Dark cyan text */
+    color: #006064;            /* Dark cyan text */
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 20px;
     line-height: 1.6;
-} 
+
+    /* Smooth transitions for dark mode & animations */
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Headings (combined into one block) */
 h1, h2, h3 {
     color: #004D40; /* Teal headings */
+    animation: floaty 6s ease-in-out infinite; /* Soft floating effect */
+    transition: color 0.4s ease; /* Smooth change in dark mode */
 }
+
+/* Links */
 a {
     color: #00796B; /* Teal links */
     text-decoration: none;
+    transition: color 0.3s ease;
 }
+
 a:hover {
     text-decoration: underline;
 }
+
+/* Buttons */
 button {
     background-color: #004D40; /* Teal button */
-    color: #E0F7FA; /* Light cyan text */
+    color: #E0F7FA;           /* Light cyan text */
     border: none;
     padding: 10px 15px;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 button:hover {
     background-color: #00796B; /* Darker teal on hover */
 }
+
 button:active {
     background-color: #00251A; /* Even darker teal on click */
 }
-/* Dark mode toggle */
+
+/* Accessibility */
+button:focus,
+a:focus {
+    outline: 2px solid #80CBC4;
+    outline-offset: 2px;
+}
+
+
+/* Dark mode styles */
 body.dark-mode {
     background-color: #263238; /* Dark background */
-    color: #ECEFF1; /* Light text */
+    color: #ECEFF1;            /* Light text */
 }
-body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 {
-    color: #B2DFDB; /* Light teal headings */
-} 
+
+/* Headings in dark mode */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #B2DFDB; 
+}
+
+/* Links in dark mode */
 body.dark-mode a {
-    color: #80CBC4; /* Light teal links */
+    color: #80CBC4; 
 }
+
+/* Buttons in dark mode */
 body.dark-mode button {
-    background-color: #004D40; /* Teal button */
-    color: #ECEFF1; /* Light text */
+    background-color: #004D40;
+    color: #ECEFF1;
 }
+
 body.dark-mode button:hover {
-    background-color: #00796B; /* Darker teal on hover */
+    background-color: #00796B;
 }
+
 body.dark-mode button:active {
-    background-color: #00251A; /* Even darker teal on click */
-} 
-/* Responsive design */
+    background-color: #00251A;
+}
+
+
+/* Floating animation for headings */
+@keyframes floaty {
+    0%, 100% { transform: translateY(0); }
+    50%     { transform: translateY(-4px); }
+}
+
+
+/* Mobile friendly adjustments */
 @media (max-width: 600px) {
     body {
         margin: 10px;
-        font-size: 14px; 
+        font-size: 14px;
     }
+
     button {
         padding: 8px 12px;
+    }
+}
+@media (min-width: 601px) {
+    body {
+        font-size: 16px;
     }
 }
