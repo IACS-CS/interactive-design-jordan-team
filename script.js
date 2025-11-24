@@ -36,3 +36,23 @@ darkModeButton.addEventListener("click", function () {
   }
 });
 // AI-generated code ends here
+// AI-generated code starts here
+// Student prompt was: "Can I make it so when the viewer clicks 'Should?',
+// it spins?"
+
+// Step 1: Select the <span class="dayoff">Should?</span> element
+var shouldWord = document.querySelector(".dayoff");
+
+// Step 2: Add a click event listener to that span
+shouldWord.addEventListener("click", function () {
+  // When the viewer clicks the word, we want it to rotate.
+
+  // classList.toggle() will ADD the "spin" class if it isn't there,
+  // and REMOVE it if it is. This lets the word spin each time you click.
+  shouldWord.classList.toggle("spin");
+
+  // Optional note:
+  // Some animations only play once unless they are removed and re-added.
+  // Using toggle helps reset the animation each click.
+});
+// AI-generated code ends here
