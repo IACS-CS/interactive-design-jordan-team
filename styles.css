@@ -1,6 +1,6 @@
 /* Light mode styles of joy and happiness */ 
 body {
-    background-color: #E0F7FA; /* Light cyan background */
+    background-image: url("background.jpg");
     color: #006064;            /* Dark cyan text */
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 20px;
