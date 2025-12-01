@@ -131,3 +131,13 @@ body.dark-mode button:active {
 /* --- IGNORE --- */
 /* End of styles.css */
 /* --- IGNORE --- */
+/* text shadows */
+h1, h2, h3 {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+a {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+button {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
