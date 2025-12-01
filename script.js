@@ -56,3 +56,4 @@ shouldWord.addEventListener("click", function () {
   // Using toggle helps reset the animation each click.
 });
 // AI-generated code ends here
+// :) horray!!!!
