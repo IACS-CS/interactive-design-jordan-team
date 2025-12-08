@@ -7,6 +7,16 @@ document.getElementById("toggleBtn").addEventListener("click", () => {
     text.style.display = "none";   // hide
   }
 });
+document.getElementById("toggle2").addEventListener("click", () => {
+  const explanation = document.getElementById("explanation");
+  
+  if (explanation.style.display === "none") {
+    explanation.style.display = "block";  // show
+  } else {
+    explanation.style.display = "none";   // hide
+  }
+});
+
 // AI-generated code starts here
 // Student prompt was: "i would like you to help me add a dark mode toggle."
 

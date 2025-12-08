@@ -13,7 +13,7 @@ body {
 /* Headings (combined into one block) */
 h1, h2, h3 {
     color: #004D40; /* Teal headings */
-    animation: floaty 6s ease-in-out infinite; 
+    animation: floaty 6s ease-in-out infinite; /* Floating animation */
     transition: color 0.4s ease; 
 }
 
