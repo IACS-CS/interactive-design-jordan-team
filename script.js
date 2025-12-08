@@ -11,7 +11,7 @@ document.getElementById("toggle3").addEventListener("click", () => {
   const text2 = document.getElementById("myText2");
 
   if (text2.style.display === "none") {
-    text2.style.display = "block";  // show
+    text2.style.display = "block";  // show text.
   } else {
     text2.style.display = "none";   // hide
   }
